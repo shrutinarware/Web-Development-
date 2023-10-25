@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <script src="main.js"></script>
+    <title>Race Day</title>
+
+    <script>
+        //created a variable
+        let registeredEarly = true;
+
+        //created another variable and assign value 25
+        let runnerAge = 16;
+
+        if(runnerAge >= 18 && registeredEarly)  
+        {
+            raceNumber +=1000;
+        }
+        else if(runnerAge > 18 && registeredEarly)
+        {
+            console.log(`You will race at 9:30 am. Your race number is ${raceNumber}`);
+        }
+        else if(runnerAge > 18 && !registeredEarly)
+        {
+            console.log(`You will race at 11:00 am. Your race number is ${raceNumber}`);
+        }
+        else if(runnerAge < 18 )
+        {
+            console.log(`You will race at 12:30 pm. Your race number is ${raceNumber}`);
+        }
+    </script>
+  </head>
+  <body></body>
+</html>

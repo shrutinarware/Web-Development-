@@ -1,0 +1,31 @@
+#profile{
+    width:1800px;
+    height: 700px;
+   
+}
+h3{
+    color: darkred;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size:xx-large;
+    
+}
+h4{
+    text-align: center;
+    color: blue;
+    font-size: xx-large;
+}
+#contact{
+    color: blue;
+    text-align: center;
+}
+#contact2{
+    background-color: black;
+    color: white;
+}
+p{
+    font-size: larger;
+}
+h2{
+    color:red;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title> Kelvin Weather</title>
+  
+
+  <script>
+    const kelvin= 293;
+    const celsius= kelvin - 293;
+
+    // conversion from celsius to Fahrenheit
+    let fahrenheit= celsius * (9/5) + 32;
+
+    // Round down the Fahrenheit temperature
+    fahrenheit = Math.floor(fahrenheit);
+
+    console.log(`The temperature is ${fahrenheit} degrees Fahrenheit`);
+
+    //conversion from Celsius to Newton
+    let newton= celsius * (33/100);
+    newton= Math.floor(newton);
+    console.log(`The temperature is ${newton} degrees Newton`);
+  </script>
+</head>
+
+<body>
+
+</body>
+</html>

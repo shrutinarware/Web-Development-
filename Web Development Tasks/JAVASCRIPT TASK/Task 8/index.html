@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Magic Eight Ball</title>
+
+    <script>
+      //Defined a variable with empty string
+      let userName ='';
+
+      //uses a ternary expression
+      userName ? console.log(`Hello, ${userName}!`):
+      console.log('Hello!');
+
+      //created another variable
+      const userQuestion = " Will I have a great day today ?";
+
+      //printed using console
+      console.log(`The user asked: ${userQuestion}`);
+
+      //Generated a random number between 0 and 7
+      const randomNumber=  Math.floor(Math.random( ) * 8);
+
+      //created another variable with empty string
+      let eightBall = '';
+
+      //uses control flow
+      if(randomNumber === 0)
+      {
+          eightBall = 'It is certain';
+      }
+      else if(randomNumber === 1)
+      {
+          eightBall = 'It is decidedly so';
+      }
+      else if(randomNumber === 2)
+      {
+          eightBall = 'Reply hazy try again';
+      }
+      else if(randomNumber === 3)
+      {
+          eightBall = 'Cannot predict now';
+      }
+      else if(randomNumber === 4)
+      {
+          eightBall = 'Do not count on it ';
+      }
+      else if(randomNumber === 5)
+      {
+          eightBall = 'My sources say no';
+      }
+      else if(randomNumber === 6)
+      {
+          eightBall = 'Outlook not so good';
+      }
+      else if(randomNumber === 7)
+      {
+          eightBall = 'Signs point to yes';
+      }
+
+
+      //print the Magic eight Balls
+      console.log(`The Magic Eight Ball's says: ${eightBall}`);
+    </script>
+  </head>
+  <body></body>
+</html>

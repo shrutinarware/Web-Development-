@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Rock, Paper or Scissors</title>
+
+    <script>
+        const getUserChoice = userInput => {
+
+            userInput = userInput.toLowerCase();
+
+            if(userInput === 'rock' || userInput === 'paper'|| userInput === 'scissors'){
+                return userInput;
+            }
+            else{
+                console.log('Error: Invalid input.Please choose either rock, paper, or scissors.');
+            }
+        };
+
+        const getComputerChoice = () =>{
+            const randomNumber = Math.floor(Math.random() * 3);
+
+            if(randomNumber === 0){
+                return 'rock';
+            }
+            else if(randomNumber === 1){
+                return 'paper';
+            }
+            else{
+                return 'scissors';
+            }
+        };
+
+        const determineWinner = (userChoice, computerChoice) => {
+            if(userChoice === computerChoice){
+                return "It's a tie!";
+            }
+            else if(userChoice === 'rock'){
+                if(computerChoice === 'paper'){
+                    return 'Computer Wins!';
+                }
+                else{
+                    return 'You Win!';
+                }
+            }
+            else if(userChoice === 'paper'){
+                if(computerChoice === 'scissors'){
+                    return 'Computer Wins!';
+                }
+                else{
+                    return 'You Win!';
+                }
+            }
+            else if(userChoice === 'scissors'){
+                if(computerChoice === 'rock'){
+                    return 'Computer Win!';
+                }
+                else{
+                    return "You Win!";
+                }
+            }
+        };
+
+        //Testing the functions
+        console.log(getComputerChoice());
+        console.log(getComputerChoice());
+        console.log(determineWinner('rock','scissors'));
+        console.log(determineWinner('paper','rock'));
+        console.log(determineWinner('scissors','paper'));
+    </script>
+    </head>
+    </html>
